@@ -21,9 +21,9 @@
 # Watch the graph in real time!
 
 - Just use the ploty.py code
-![alt text]("https://user-images.githubusercontent.com/44561732/78093643-0643df00-73a9-11ea-972b-9dab08f9639c.png")
 
-# /endpoints
+<img width="1345" alt="screen" src="https://user-images.githubusercontent.com/44561732/78093643-0643df00-73a9-11ea-972b-9dab08f9639c.png">
+
 
 ## /country
 - Bring all information about the countries
