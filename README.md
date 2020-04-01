@@ -21,7 +21,7 @@
 # Watch the graph in real time!
 
 - Just use the ploty.py code
-![alt text](http://https://photos.app.goo.gl/8V4oL2CQpkbdTeHo8)
+![alt text]("https://user-images.githubusercontent.com/44561732/78093463-a64d3880-73a8-11ea-9040-b14c60f767ee.png")
 
 # /endpoints
 
