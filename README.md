@@ -18,7 +18,7 @@
   "totalRecovered": "136 "
 }
 ```
-# Watch the map of new cases of COVID-19 in real time
+# Watch the map of COVID-19's new cases in real time
 
 - Just use the ploty.py code
 
