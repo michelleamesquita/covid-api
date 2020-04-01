@@ -14,7 +14,7 @@ totalRecovered=[]
 id=[]
 iso_alpha=[]
 
-for i in range(404):
+for i in range(205):
     url = 'http://127.0.0.1:5000/country/'+str(i)
     r = requests.get(url)
     app_json = r.json()
@@ -31,22 +31,22 @@ for i in range(404):
     iso_alpha.append(a[:3].upper())
 
 newCases2=[]
-for i in range(404):
-     total = str(newCases[i]).replace(",", ".")
-     total = total.replace("+","")
-     if total == '':
+for i in range(0,205):
+    total = str(newCases[i]).replace(",", ".")
+    total = total.replace("+","")
+    if total == '':
          total = 0
-         # newCases2.append(total)
-     else:
+         newCases2.append(total)
+    else:
         total=float(total)
-     #    new_total=total/100
-     #    if new_total > 0.001:
-     #         total=total*1000
-
-     # total=round(total)
-     newCases2.append(total)
+        if (total%1)*1000 > 100:
+             total=total*1000
+             newCases2.append(total)
+        else:
+            newCases2.append(total)
 
 print(newCases2)
+
 
 data = {
         'id': id,
@@ -65,8 +65,11 @@ data = {
 
 # Create DataFrame
 df = pd.DataFrame(data)
-print(df)
-fig = px.scatter_geo(df, locations="iso_alpha",color="country",hover_name="country", size="newCases",
+
+with pd.option_context('display.max_rows', None, 'display.max_columns', None):  # more options can be specified also
+    print(df)
+
+fig = px.scatter_geo(df, locations="iso_alpha",color="newCases", size="newCases",hover_name="country",
                        projection="natural earth")
 
 fig.show()
