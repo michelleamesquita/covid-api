@@ -18,7 +18,10 @@
   "totalRecovered": "136 "
 }
 ```
+# Watch the graph in real time!
 
+- Just use the ploty.py code
+![alt text](http://https://photos.app.goo.gl/8V4oL2CQpkbdTeHo8)
 
 # /endpoints
 
