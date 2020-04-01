@@ -38,13 +38,13 @@ for i in range(2,len(infoTable),11):
 for i in range(3,len(infoTable),11):
     totalDeath.append(infoTable[i])
 
-for i in range(3,len(infoTable),11):
+for i in range(4,len(infoTable),11):
     totalRecovered.append(infoTable[i])
 
-for i in range(4,len(infoTable),11):
+for i in range(5,len(infoTable),11):
     activeCases.append(infoTable[i])
 
-for i in range(5,len(infoTable),11):
+for i in range(6,len(infoTable),11):
     seriousCritical.append(infoTable[i])
 
 for i in range(10,len(infoTable),11):
