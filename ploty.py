@@ -39,7 +39,7 @@ for i in range(0,205):
          newCases2.append(total)
     else:
         total=float(total)
-        if (total%1)*1000 > 100:
+        if (total%1)*1000 > 0:
              total=total*1000
              newCases2.append(total)
         else:
